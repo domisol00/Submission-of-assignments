@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+ * 작성자 : 도현호
+ -->
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="590.0" prefWidth="350.0" stylesheets="@../../../css/login/popup.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <!-- 제목 -->
+	  <Label alignment="CENTER" layoutX="124.0" layoutY="15.0" text="과제 제출 확인">
+		 <font>
+            <Font size="16.0" />
+         </font>
+       </Label>
+       
+      <!-- 과제명 -->
+      <Label layoutX="15.0" layoutY="55.0" prefHeight="35.0" prefWidth="60.0" text="과제명" />
+      <Label id="field" fx:id="lblTaskTitle" layoutX="90.0" layoutY="55.0" prefHeight="35.0" prefWidth="245.0" />
+      
+      <!-- 학생명 -->
+      <Label layoutX="15.0" layoutY="105.0" prefHeight="35.0" prefWidth="60.0" text="학생명" />
+      <Label id="field" fx:id="lblStudentName" layoutX="90.0" layoutY="105.0" prefHeight="35.0" prefWidth="245.0" />
+      
+      <!-- 학생명 -->
+      <Label layoutX="15.0" layoutY="155.0" prefHeight="35.0" prefWidth="60.0" text="제출날짜" />
+      <Label id="field" fx:id="lblSubmittedDate" layoutX="90.0" layoutY="155.0" prefHeight="35.0" prefWidth="245.0" />
+      
+      <!-- 제출파일 -->
+      <Label layoutX="15.0" layoutY="205" prefHeight="35.0" prefWidth="60.0" text="제출파일" />
+      <Label id="field" fx:id="lblAttachedFilename" layoutX="90.0" layoutY="205" prefHeight="35.0" prefWidth="175.0" />
+      <Button id="innerButton" fx:id="btnDownload" layoutX="265.0" layoutY="205" prefHeight="30.0" prefWidth="70.0" text="다운로드" />
+      
+      <!-- 문의사항 -->
+      <Label layoutX="15.0" layoutY="255" prefHeight="35.0" prefWidth="60.0" text="문의사항" />
+      <TextArea fx:id="txtQuestion" editable="false" layoutX="90.0" layoutY="255" prefHeight="100.0" prefWidth="245.0" wrapText="true" />
+      
+      <!-- 답변 -->
+      <Label layoutX="15.0" layoutY="370" prefHeight="35.0" prefWidth="60.0" text="답변" />
+      <TextArea fx:id="txtAnswer" layoutX="90.0" layoutY="370" prefHeight="100.0" prefWidth="245.0" wrapText="true" />
+      <Label fx:id="lblAnswer" layoutX="239.0" layoutY="470.0" prefHeight="20.0" prefWidth="95.0" />
+     
+     
+      <!-- 과제점수 -->
+      <Label layoutX="15.0" layoutY="485" prefHeight="35.0" prefWidth="60.0" text="과제점수" />
+      <TextField id="field" fx:id="txtScore" layoutX="90.0" layoutY="485" prefHeight="35.0" prefWidth="55.0" />
+      <Label alignment="CENTER" layoutX="145.0" layoutY="485" prefHeight="35.0" prefWidth="30.0" text="/" />
+      <Label fx:id="lblPerfectScore" layoutX="175.0" layoutY="485" prefHeight="35.0" prefWidth="55.0" />
+     
+      <!-- 버튼 -->
+      <Button id="btnSubmit" fx:id="btnSubmit" layoutX="15.0" layoutY="535.0" prefHeight="40.0" prefWidth="158.5" text="등록" />
+      <Label id="pipe" alignment="CENTER" layoutX="173.5" layoutY="535.0" prefHeight="40.0" prefWidth="3.0" text="|" />
+      <Button id="btnCancel" fx:id="btnCancle" layoutX="178" layoutY="535" prefHeight="40.0" prefWidth="158.5" text="취소" />
+   </children>
+</AnchorPane>

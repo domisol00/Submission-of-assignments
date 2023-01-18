@@ -1,0 +1,130 @@
+/* 공통 */
+* {
+-fx-focus-color: #ccc;
+-fx-border-style: none;
+}
+
+/*배경색 */
+.root {
+	-fx-background-color: #ffffff;
+	-fx-focus-color: transparent;
+	-fx-faint-focus-color: transparent;
+}
+
+/*버튼 */
+.toggle-button {
+	-fx-background-color: #ffffff;
+}
+#student.toggle-button{
+    -fx-text-fill: black;  
+    -fx-border-width: 0 0 1 0;
+	-fx-border-color: black;
+}
+
+#student.toggle-button:selected{
+    -fx-text-fill: black;  
+    -fx-border-width: 1 1 0 1;
+	-fx-border-color: black;
+}
+
+#teacher.toggle-button{
+    -fx-text-fill: black;  
+    -fx-border-width: 0 0 1 0;
+	-fx-border-color: black;
+}
+
+#teacher.toggle-button:selected{
+    -fx-text-fill: black;
+    -fx-border-width: 1 1 0 1;
+	-fx-border-color: black;
+}
+
+Button{
+	-fx-background-color: #ffffff;
+}
+
+Button:hover{
+	
+	-fx-border-color: #ccc;
+}
+#login.button{
+	-fx-background-color: #666666;
+	-fx-text-fill: #ffffff;
+}
+
+#innerButton.button{
+	
+	-fx-border-color: #ccc;
+    -fx-text-fill: #6D6D6D;
+}
+
+/*버튼 사이 구분 */
+#pipe.label{
+		
+    -fx-text-fill: #ccc;
+}
+
+/* 라벨/텍스트 필드 */
+#field {
+	
+	-fx-background-color: #ffffff;
+	-fx-border-width: 0 0 1 0;
+	-fx-border-color: gray;	
+}
+#field:focused{
+    
+    -fx-border-width: 0 0 1.2 0;
+	-fx-border-color: black;
+}
+#className, #teacherName, #startDate, #endDate, #limitStudent {
+	
+	-fx-background-color: #ffffff;
+	-fx-border-width: 0 0 1 0;
+	-fx-border-color: gray;	
+}
+
+
+/* 콤보박스 */
+.combo-box{
+	-fx-background-color: transparent ;
+	-fx-border-color: black;
+}
+
+.combo-box:focused{
+	-fx-background-color: transparent ;
+}
+
+.combo-box .arrow-button{
+	-fx-background-color: transparent ;
+}
+
+.combo-box-popup .list-view  {
+   -fx-background-color: -fx-box-border, -fx-control-inner-background;
+   -fx-background-insets: 0, 1;
+ }
+ 
+.combo-box-popup .list-view .list-cell  {
+-fx-background-color: #FFFFFF;
+-fx-text-fill: #000000;
+ }
+ 
+ .combo-box-popup .list-view .list-cell:hover {
+    -fx-text-fill: black;
+    -fx-background-color: #AAAAAA;
+}
+
+.combo-box .cell:selected {
+    -fx-text-fill: #000000;
+}
+
+/* textarea */
+.text-area {
+	-fx-border-color: #000000;
+	-fx-focus-color: transparent;
+	-fx-faint-focus-color: transparent;
+}
+.text-area:focused{
+	-fx-border-color: #000000;
+	-fx-focus-color: transparent;
+	-fx-faint-focus-color: transparent;
+}

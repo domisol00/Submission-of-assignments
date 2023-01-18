@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+ * 작성자 : 도현호
+ * 최종 작성일 : 2020-05-15
+ -->
+
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="500.0" prefWidth="350.0" stylesheets="@../../../css/login/popup.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+		<!-- 제목 -->   
+      <Label alignment="CENTER" layoutX="140.0" layoutY="20.0" text="강의 신청">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+         <!-- 강의명 -->
+      <Label layoutX="15.0" layoutY="59.0" prefHeight="35.0" prefWidth="85.0" text="강의명">
+         <font>
+            <Font size="12.0" />
+         </font></Label>
+      <Label id="field" fx:id="lblClassname" layoutX="100.0" layoutY="59.0" prefHeight="35.0" prefWidth="235.0" />
+		<!-- 강사명  -->
+      <Label layoutX="15.0" layoutY="114.0" prefHeight="35.0" prefWidth="85.0" text="강사명">
+         <font>
+            <Font size="12.0" />
+         </font></Label>
+      <Label id="field" fx:id="lblTeachername" layoutX="100.0" layoutY="114.0" prefHeight="35.0" prefWidth="235.0" />
+		<!-- 강의내용 -->
+      <Label layoutX="15.0" layoutY="169.0" prefHeight="35.0" prefWidth="85.0" text="강의내용">
+         <font>
+            <Font size="12.0" />
+         </font></Label>
+      <Label id="field" fx:id="lblClassdate" layoutX="100.0" layoutY="309.0" prefHeight="35.0" prefWidth="235.0" />
+		<!-- 강의 기간 -->
+      <Label layoutX="15.0" layoutY="309.0" prefHeight="35.0" prefWidth="85.0" text="강의기간">
+         <font>
+            <Font size="12.0" />
+         </font></Label>
+      <TextArea id="area" fx:id="txtClassdescription" layoutX="100.0" layoutY="169.0" prefHeight="119.0" prefWidth="235.0" />
+		<!-- 수강가능인원 -->
+      <Label layoutX="15.0" layoutY="364.0" prefHeight="35.0" prefWidth="85.0" text="수강가능인원">
+         <font>
+            <Font size="12.0" />
+         </font></Label>
+      <Label id="field" fx:id="lblLimitclass" layoutX="100.0" layoutY="364.0" prefHeight="35.0" prefWidth="235.0" />
+      
+      <!-- 버튼 -->
+      <Button id="done" fx:id="btnSubmit" layoutX="15.0" layoutY="430.0" prefHeight="40.0" prefWidth="158.5" text="등록" />
+      <Label id="pipe" alignment="CENTER" layoutX="173.5" layoutY="430.0" prefHeight="40.0" prefWidth="3.0" text="|" />
+      <Button fx:id="btnCancle" layoutX="178" layoutY="430" prefHeight="40.0" prefWidth="158.5" text="취소" />
+   </children>
+</AnchorPane>

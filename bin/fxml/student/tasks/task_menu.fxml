@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="32" prefWidth="1024.0" style="-fx-background-color: white;" stylesheets="@../../../css/main/main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="student.tasks.Submenu2_Controller">
+	<children>
+		<Button fx:id="btn2_2" layoutX="200.0" layoutY="1.0" prefHeight="30" prefWidth="100" text="전체과제" />
+		<Button fx:id="btn2_1" layoutX="300.0" layoutY="1.0" prefHeight="30" prefWidth="100" text="진행 중 과제" />
+	</children>
+</AnchorPane>

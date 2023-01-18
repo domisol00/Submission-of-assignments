@@ -1,0 +1,14 @@
+/* 테이블 줄 높이 */
+.table-row-cell {
+    -fx-cell-size: 35px;
+}
+
+/*셀 정렬*/
+#tableView .colCenter{
+  -fx-alignment: CENTER;
+}
+
+#tableView .colCenter-Left{
+  -fx-alignment: CENTER-LEFT;
+  -fx-border-insets: 0 0 0 10;    /* 셀 왼쪽 여백 */
+}

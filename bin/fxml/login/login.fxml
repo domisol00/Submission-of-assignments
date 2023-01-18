@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.ToggleButton?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="450.0" prefWidth="330.0"
+			stylesheets="@../../css/login/popup.css"
+			xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.LoginController">
+   <children>
+      <ToggleButton id="student" fx:id="student" layoutX="15.0" layoutY="35.0" prefHeight="36.0" prefWidth="150.0" selected="true" text="학생 " />
+      <ToggleButton id="teacher" fx:id="teacher" layoutX="165.0" layoutY="35.0" prefHeight="36.0" prefWidth="150.0" text="교사" />
+      <TextField id="field" fx:id="id" layoutX="15.0" layoutY="120.0" prefHeight="40.0" prefWidth="300.0" promptText="아이디를 입력해주세요" />
+      <Label layoutX="57.0" layoutY="270.0" textFill="#d72222" />
+      <PasswordField id="field" fx:id="password" layoutX="15.0" layoutY="200.0" prefHeight="40.0" prefWidth="300.0" promptText="비밀번호를 입력해주세요" />
+      <Button id="login" fx:id="login" layoutX="15.0" layoutY="280.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="300.0" text="로그인" />
+      <Separator layoutY="360.0" prefHeight="0.0" prefWidth="330.0" />
+      <Button id="idsearch" fx:id="idsearch" alignment="CENTER" layoutX="15.0" layoutY="393.0" prefHeight="30.0" prefWidth="98.5" text="아이디 찾기" />
+      <Label id="pipe" alignment="CENTER" layoutX="115.0" layoutY="393.0" prefHeight="30.0" prefWidth="3.0" text="|" />
+      <Button id="passsearch" fx:id="passsearch" alignment="CENTER" layoutX="119.5" layoutY="393.0" prefHeight="30.0" prefWidth="98.5" text="비밀번호 찾기" />
+      <Label id="pipe" alignment="CENTER" layoutX="219.5" layoutY="393.0" prefHeight="30.0" prefWidth="3.0" text="|" />
+      <Button id="signup" fx:id="signup" alignment="CENTER" layoutX="224.0" layoutY="393.0" prefHeight="30.0" prefWidth="98.5" text="회원가입 " />
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

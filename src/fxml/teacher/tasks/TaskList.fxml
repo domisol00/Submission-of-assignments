@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane fx:id="reportListPane" prefHeight="668.0" prefWidth="1024.0"  stylesheets="@../../../css/teacher/table.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="teacher.tasks.TaskListController">
+	<children>
+		<!-- 창크기 좌우 15px여백을 위해 x좌표 15와 1024에서 30만큼 뺀 가로크기 지정 -->
+		<TableView fx:id="tblViewReport" layoutX="15.0" layoutY="40.0" prefHeight="520.0" prefWidth="994.0">
+			<columns>
+				<TableColumn fx:id="tcNo" prefWidth="70" text="No." />
+				<TableColumn styleClass="colAlignLeft" fx:id="tcTitle" prefWidth="180.0" text="과제명" />
+				<TableColumn fx:id="tcRegDate" prefWidth="115.0" text="등록 날짜" />
+				<TableColumn fx:id="tcExpireDate" prefWidth="115.0" text="제출 기한" />
+				<TableColumn styleClass="colAlignLeft" fx:id="tcFile" prefWidth="200.0" text="첨부파일" />
+				<TableColumn styleClass="colAlignRight" fx:id="perfectScore" prefWidth="105.0" text="만점점수" />
+				<TableColumn fx:id="modify" prefWidth="190.0" text="수정/삭제" />
+			</columns>
+		</TableView>
+		<ComboBox fx:id="combo" layoutX="810.0" layoutY="13.0" prefWidth="200" promptText="과목명 선택" />
+		<Button fx:id="btnReportCreate" layoutX="889" layoutY="580" prefHeight="30.0" prefWidth="120.0" text="과제 만들기" />
+	</children>
+</AnchorPane>

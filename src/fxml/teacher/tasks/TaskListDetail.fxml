@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane fx:id="taskDetailListPane" prefHeight="668.0" prefWidth="1024.0" stylesheets="@../../../css/teacher/table.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="teacher.tasks.TaskDetailController">
+   <children>
+     
+      <TableView fx:id="tblView" layoutX="15.0" layoutY="40.0" prefHeight="520.0" prefWidth="994.0">
+        <columns>
+          <TableColumn fx:id="tcNo" prefWidth="70" text="No." />
+          <TableColumn fx:id="tcName" prefWidth="180.0" text="학생명" />
+            <TableColumn fx:id="tcSubmitStatus" prefWidth="124.0" text="제출여부" />
+            <TableColumn fx:id="tcSubmitDate" prefWidth="180.0" text="제출날짜" />
+            <TableColumn fx:id="tcScore" minWidth="0.0" prefWidth="150.0" text="점수" />
+            <TableColumn fx:id="tcMark" minWidth="0.0" prefWidth="120.0" text="채점여부" />
+            <TableColumn fx:id="tcBtn" prefWidth="90.0" text="상세보기" />
+        </columns>
+      </TableView>
+    
+      <HBox layoutX="15.0" layoutY="14.0" prefHeight="20.0" prefWidth="300.0">
+         <children>
+            <Label text="* 과제명 : " />
+            <Label fx:id="lblTaskTitle" text="과제명이 표시됩니다." />
+         </children>
+      </HBox>
+      <ComboBox fx:id="comboTaskList" layoutX="810.0" layoutY="13.0" prefHeight="23.0" prefWidth="200.0" />
+    
+      <GridPane layoutX="512.0" layoutY="596.0">
+         <children>
+            <ProgressBar fx:id="pbarSubmitRate" prefWidth="200.0" progress="0.0" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+            <Label text="* 과제 제출율 : " />
+            <Label fx:id="lblSubmitRate" text="제출율 표시" GridPane.columnIndex="1" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+      </GridPane>
+     
+      <GridPane layoutX="810.0" layoutY="596.0">
+         <children>
+            <ProgressBar fx:id="pbarAvg" prefWidth="200.0" progress="0.0" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+            <Label text="* 과제 평균점수 : " />
+            <Label fx:id="lblAvg" text="평균 표시" GridPane.columnIndex="1" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+      </GridPane>
+      <Button fx:id="btnExport" layoutX="15.0" layoutY="602.0" mnemonicParsing="false" text="Excel로 내보내기" />
+   
+   </children>
+</AnchorPane>

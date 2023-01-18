@@ -1,0 +1,31 @@
+/*
+우선순위는 아래와 같습니다.
+
+1. 속성 값 뒤에 !important 를 붙인 속성
+2. HTML에서 style을 직접 지정한 속성
+3. 태그선택자(#id) 로 지정한 속성
+4. 클래스선택자(.클래스), :추상클래스 로 지정한 속성
+5. 타입선택자(태그이름) 으로 지정한 속성
+6. 상위 객체에 의해 상속된 속성
+*/
+
+/*
+1. id    선택자 - css에서 #lblClass / fxml에서 id="lblClass" 
+2. class 선택자 - css에서 .lblClass / fxml에서 styleClass = "lblClass"
+3. type  선택자 - css에서 Label{}
+*/
+
+/* 테이블 줄 높이 */
+.table-row-cell {
+    -fx-cell-size: 35px;
+}
+
+/*셀 정렬*/
+#tableView .colCenter{
+  -fx-alignment: CENTER;
+}
+
+#tableView .colCenter-Left{
+  -fx-alignment: CENTER-LEFT;
+  -fx-border-insets: 0 0 0 10;    /* 셀 왼쪽 여백 */
+}

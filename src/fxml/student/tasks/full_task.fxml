@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+ * 작성자 : 도현호
+ -->
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane prefHeight="668.0" prefWidth="1024.0" style="-fx-background-color: #F4F4F4;"
+			xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" 
+			fx:controller="student.tasks.Full_Task_Controller" fx:id = "assignPane" 
+			stylesheets="@../../../css/teacher/table.css">
+   <children>
+		<!-- 창크기 좌우 15px여백을 위해 x좌표 15와 1024에서 30만큼 뺀 가로크기 지정 -->
+		<TableView id="tableView" fx:id="tableView" layoutX="15.0" layoutY="40.0" prefHeight="520.0" prefWidth="994.0">
+			<columns>
+				<TableColumn styleClass = "colCenter" fx:id="colTaskNo" prefWidth="60.0" text="No." />
+				<TableColumn styleClass = "colCenter-Left" fx:id="colClassName" prefWidth="195" text="강의명" />
+				<TableColumn styleClass = "colCenter-Left" fx:id="colTaskName" prefWidth="245.0" text="과제명" />
+				<TableColumn styleClass = "colCenter" fx:id="colTaskSubmit" prefWidth="42.0" text="제출&#10;여부" />
+				<TableColumn styleClass = "colCenter" fx:id="colTaskSubmissionDate" prefWidth="110.0" text="제출날짜" />
+				<TableColumn styleClass = "colCenter" fx:id="colTaskDeadlineDate" prefWidth="110.0" text="마감날짜" />
+				<TableColumn styleClass = "colCenter" fx:id="colTaskScore" prefWidth="102.0" text="점수" />
+				<TableColumn styleClass = "colCenter" fx:id="colTaskAssign" prefWidth="100.0" text="과제제출" />
+			</columns>
+		</TableView>
+		<ComboBox fx:id="combo" layoutX="809.0" layoutY="15.0" prefWidth="200.0" promptText="과제명 선택" />
+		<ProgressBar fx:id="pgbScore" layoutX="559" layoutY="580.0" prefWidth="200.0" prefHeight="25" progress="0.0" />
+		<Label fx:id="txtPoint" layoutX="559.0" layoutY="610.0" prefWidth="40.0" text="점수 : " />
+		<Label fx:id="lblMyScore" layoutX="599.0" layoutY="610.0" prefWidth="40.0" />
+		<Label fx:id="txtSlash1" alignment="CENTER" layoutX="639.0" layoutY="610.0" prefWidth="20.0" text="/" />
+		<Label fx:id="lblPerfectScore" layoutX="659.0" layoutY="610.0" prefWidth="40.0" />
+		<ProgressBar fx:id="pgbSubmitCnt" layoutX="809" layoutY="580.0" prefWidth="200.0" prefHeight="25" progress="0.0" />
+		<Label fx:id="txtTaskCount" layoutX="809" layoutY="610" prefWidth="65.0" text="과제 개수 :" />
+		<Label fx:id="lblSubmitTask" layoutX="874" layoutY="610" prefWidth="40.0" />
+		<Label fx:id="txtSlash2" alignment="CENTER" layoutX="914" layoutY="610" prefWidth="20.0" text="/" />
+		<Label fx:id="lblTotalTask" layoutX="934" layoutY="610.0" prefWidth="40.0" />
+   </children>
+</AnchorPane>

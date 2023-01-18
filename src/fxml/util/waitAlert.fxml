@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+
+<AnchorPane prefHeight="80.0" prefWidth="280.0"
+			xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+				<!-- style="-fx-background-color: black; -fx-background-radius: 20px;"-->
+			
+   <children>
+      <Label id="lblMessage" alignment="CENTER" prefHeight="80.0" prefWidth="280.0" text="Label" />
+   </children>
+</AnchorPane>

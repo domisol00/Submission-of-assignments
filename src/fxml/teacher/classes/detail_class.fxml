@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="460" prefWidth="350.0" stylesheets="@../../../css/login/popup.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="112.0" layoutY="23.0" text="강의 상세보기">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="75.0" prefHeight="30.0" prefWidth="60.0" text="강의명" />
+      <Label layoutX="15.0" layoutY="125.0" prefHeight="30.0" prefWidth="60.0" text="강사명" />
+      <Label layoutX="15.0" layoutY="175.0" prefHeight="30.0" prefWidth="60.0" text="강의설명" />
+      <Label layoutX="15.0" layoutY="335.0" prefHeight="30.0" prefWidth="60.0" text="강의기간" />
+      <Label id="className" layoutX="80.0" layoutY="75.0" prefHeight="30.0" prefWidth="250.0" />
+      <Label id="teacherName" layoutX="80.0" layoutY="125.0" prefHeight="30.0" prefWidth="125.0" />
+      <TextArea id="description" layoutX="80.0" layoutY="175.0" prefHeight="140.0" prefWidth="250.0" />
+      <Label id="startDate" layoutX="80.0" layoutY="335.0" prefHeight="30.0" prefWidth="140.0" />
+      <Label layoutX="52.0" layoutY="380.0" text="~" />
+      <Label id="endDate" layoutX="80.0" layoutY="380.0" prefHeight="30.0" prefWidth="140.0" />
+      <Label layoutX="15.0" layoutY="410.0" prefHeight="30.0" prefWidth="60.0" text="수강인원" />
+      <Label id="limitStudent" layoutX="80.0" layoutY="410.0" prefHeight="30.0" prefWidth="80.0" />
+   </children>
+</AnchorPane>

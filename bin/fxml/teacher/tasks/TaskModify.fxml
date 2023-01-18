@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+ * 작성자 : 도현호
+ -->
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="445.0" prefWidth="350.0" stylesheets="@../../../css/login/popup.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <!-- 제목 -->
+	  <Label alignment="CENTER" layoutX="143.0" layoutY="15.0" text="과제 수정">
+		 <font>
+            <Font size="16.0" />
+         </font>
+       </Label>
+      
+      <!-- 과제명 -->
+      <Label layoutX="15.0" layoutY="55.0" prefHeight="35.0" prefWidth="60.0" text="과제명" />
+      <TextField id="field" fx:id="txtTitle" layoutX="90.0" layoutY="55.0" prefHeight="35.0" prefWidth="245.0" />
+      <Label fx:id="lblTitle" alignment="CENTER_RIGHT" layoutX="275.0" layoutY="90.0" prefHeight="20.0" prefWidth="60.0" />
+      
+      <!-- 과제설명 -->
+      <Label layoutX="15.0" layoutY="115.0" prefHeight="35.0" prefWidth="60.0" text="과제설명" />
+      <TextArea fx:id="txtDesc" layoutX="90.0" layoutY="115.0" prefHeight="100.0" prefWidth="245.0" wrapText="true"/>
+      <Label fx:id="lblDesc" alignment="CENTER_RIGHT" layoutX="245.0" layoutY="215.0" prefHeight="20.0" prefWidth="90.0" />
+      
+      <!-- 만점 점수 -->
+      <Label layoutX="15.0" layoutY="230.0" prefHeight="35.0" prefWidth="60.0" text="만점 점수" />
+      <TextField id="field" fx:id="txtPerfectScore" layoutX="90.0" layoutY="230.0" prefHeight="35.0" prefWidth="120.0" />
+      
+      <!-- 제출기한 --> 
+      <Label layoutX="14.0" layoutY="280.0" prefHeight="35.0" prefWidth="60.0" text="제출 기한" />
+      <DatePicker id="field" fx:id="dateExpire" layoutX="90.0" layoutY="280.0" prefHeight="35.0" prefWidth="150.0" />
+      <Button id="innerButton" fx:id="btnDateDel" layoutX="275.0" layoutY="280.0" prefHeight="35.0" prefWidth="60.0" text="삭제" />
+      
+      <!-- 첨부파일 -->
+      <Label layoutX="15.0" layoutY="330.0" prefHeight="35.0" prefWidth="60.0" text="첨부 파일" />
+      <TextField id="field" fx:id="txtFile" layoutX="90.0" layoutY="330.0" prefHeight="35.0" prefWidth="170.0" />
+      <Button id="innerButton" fx:id="btnFile" layoutX="275.0" layoutY="330.0" prefHeight="35.0" prefWidth="30" text="+" />
+      <Button id="innerButton" fx:id="btnFileDel" layoutX="305.0" layoutY="330.0" prefHeight="35.0" prefWidth="30" text="-" />
+      <Label fx:id="lblFileSize" layoutX="205.0" layoutY="365.0" prefHeight="20.0" prefWidth="130.0" />
+      
+      <!-- 버튼 -->
+      <Button id="btnSubmit" fx:id="btnSubmit" layoutX="15.0" layoutY="395.0" prefHeight="35.0" prefWidth="158.5" text="수정" />
+      <Label id="pipe" alignment="CENTER" layoutX="173.5" layoutY="395.0" prefHeight="35.0" prefWidth="3.0" text="|" />
+      <Button fx:id="btnCancle" layoutX="178.0" layoutY="395.0" prefHeight="35.0" prefWidth="158.5" text="취소" />
+   </children>
+</AnchorPane>

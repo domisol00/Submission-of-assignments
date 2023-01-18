@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+ * 작성자 : 도현호
+ -->
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.collections.*?>
+
+<AnchorPane prefHeight="668.0" prefWidth="1024.0" style="-fx-background-color: #F4F4F4;"
+			xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" 
+			fx:controller="student.classes.Current_Class_Controller"
+			stylesheets="@../../../css/teacher/table.css">
+	<children>
+		<!-- 창크기 좌우 15px여백을 위해 x좌표 15와 1024에서 30만큼 뺀 가로크기 지정 -->
+		<TableView id = "tableView" fx:id="tableView" layoutX="15.0" layoutY="40.0" prefHeight="520" prefWidth="994.0">
+			<columns>
+				<TableColumn styleClass = "colCenter" fx:id="colClassNo" prefWidth="70.0" text="No." />
+				<TableColumn styleClass = "colCenter-Left" fx:id="colClassName" prefWidth="300.0" text="강의명" />
+				<TableColumn styleClass = "colCenter" fx:id="colClassDate" prefWidth="247.0" text="수업기간" />
+				<TableColumn styleClass = "colCenter" fx:id="colClassTeacher" prefWidth="130.0" text="강사명" />
+				<TableColumn styleClass = "colCenter" fx:id="colClassTask" prefWidth="100.0" text="과제 수" />
+				<TableColumn styleClass = "colCenter" fx:id="colClassStatus" prefWidth="120.0" text="수강상태" />
+			</columns>
+		</TableView>
+ 		<TextField fx:id="txtSearch" layoutX="769" layoutY="580" prefHeight="30.0" prefWidth="180" promptText="강의명 또는 강사명 입력" />
+		<Button fx:id="btnSearch" layoutX="949" layoutY="580" prefHeight="30.0" prefWidth="60.0" text="검색" />
+	</children>
+</AnchorPane>

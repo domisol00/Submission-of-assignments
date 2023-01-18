@@ -1,0 +1,61 @@
+/*배경색 */
+.root {
+	-fx-background-color: #ffffff;
+}
+
+/*버튼 */
+.button {
+	-fx-background-color: #ffffff;
+}
+/* 
+.button:pressed { 
+    -fx-background-color: #ffffff;
+    -fx-text-fill: black;   
+}
+
+.button:selected { 
+    -fx-background-color: #ffffff;
+    -fx-text-fill: black;   
+}
+.button:focused { 
+    -fx-background-color: #ffffff;
+    -fx-text-fill: black;   
+}
+*
+*/
+
+#student.button:pressed, 
+#student.button:selected,
+#student.button:focused {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: black;   
+    -fx-border-width: 1 1 0 1;
+	-fx-border-color: black;
+}
+
+#teacher.button:pressed,
+#teacher.button:selected,
+#teacher.button:focused{
+    -fx-background-color: #ffffff;
+    -fx-text-fill: black;
+    -fx-border-width: 1 1 0 1;
+	-fx-border-color: black;
+}
+
+#login.button{
+	-fx-background-color: gray;
+	-fx-text-fill: #ffffff;
+}
+
+/*입력필드 */
+#field {
+	
+	-fx-background-color: #ffffff;
+	-fx-border-width: 0 0 1 0;
+	-fx-border-color: gray;	
+}
+#field:focused{
+    
+    -fx-border-width: 0 0 1.2 0;
+	-fx-border-color: black;
+}

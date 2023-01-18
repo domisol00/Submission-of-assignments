@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="668.0" prefWidth="1024.0" stylesheets="@../../../css/teacher/table.css"
+			xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+			fx:id="teacherMain" fx:controller="teacher.classes.TeacherMainController">
+	<children>
+		<!-- 창크기 좌우 15px여백을 위해 x좌표 15와 1024에서 30만큼 뺀 가로크기 지정 -->
+		<TableView fx:id="classTableView" layoutX="15.0" layoutY="40.0" prefHeight="520.0" prefWidth="994.0">
+			<columns>
+				<TableColumn fx:id="tcClassNo" prefWidth="70.0" text="NO." />
+				<TableColumn fx:id="tcClassName" prefWidth="270.0" text="강의명" />
+				<TableColumn fx:id="tcTeacherName" prefWidth="89.0" text="강사명" />
+				<TableColumn fx:id="tcStartDate" prefWidth="115.0" text="시작일" />
+				<TableColumn fx:id="tcEndDate" prefWidth="115.0" text="종료일" />
+				<TableColumn fx:id="tcLimitStudent" prefWidth="80.0" text="수강인원" />
+				<TableColumn fx:id="modify" prefWidth="130.0" text="수정 / 삭제" />
+				<TableColumn fx:id="detail" prefWidth="100.0" text="상세보기" />
+			</columns>
+		</TableView>
+		<TextField fx:id="txtSearch" layoutX="609.0" layoutY="580" prefHeight="30.0" prefWidth="180.0" promptText="강의명 또는 강사명 입력" />
+		<Button layoutX="780.0" layoutY="580" onAction="#btnSearch" prefHeight="30.0" prefWidth="60.0" text="검색" />
+		<Button layoutX="889.0" layoutY="580" onAction="#btnNewClass" prefHeight="30.0" prefWidth="120.0" text="강의만들기" />
+	</children>
+</AnchorPane>
